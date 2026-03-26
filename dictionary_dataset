@@ -1,0 +1,79 @@
+//this is a data set for ml ... its a dictionary in python that can be converted into a data set by using pd.DataFrame(*name*) command..//
+data = {
+    "EmployeeID": list(range(1001, 1026)),
+    "Age": [25, 32, 45, 29, 41, 36, 28, 50, 39, 31,
+            27, 44, 38, 30, 42, 35, 26, 48, 33, 37,
+            29, 46, 40, 34, 43],
+    "Gender": ["Female", "Male", "Male", "Female", "Male",
+               "Female", "Male", "Male", "Female", "Female",
+               "Male", "Female", "Male", "Female", "Male",
+               "Female", "Male", "Male", "Female", "Male",
+               "Female", "Male", "Female", "Male", "Female"],
+    "Department": ["HR", "IT", "Finance", "Marketing", "IT",
+                   "Finance", "HR", "IT", "Marketing", "Finance",
+                   "HR", "IT", "Finance", "Marketing", "IT",
+                   "Finance", "HR", "IT", "Marketing", "Finance",
+                   "HR", "IT", "Marketing", "Finance", "IT"],
+    "YearsExperience": [2, 8, 20, 5, 15, 10, 3, 25, 12, 7,
+                        4, 18, 11, 6, 16, 9, 2, 22, 8, 13,
+                        5, 19, 14, 7, 17],
+    "EducationLevel": ["Bachelor", "Master", "PhD", "Bachelor", "Master",
+                       "Bachelor", "Bachelor", "PhD", "Master", "Bachelor",
+                       "Bachelor", "Master", "Master", "Bachelor", "PhD",
+                       "Master", "Bachelor", "PhD", "Bachelor", "Master",
+                       "Bachelor", "PhD", "Master", "Bachelor", "Master"],
+    "MonthlySalary": [3500, 6000, 12000, 4000, 9500,
+                      7000, 3200, 15000, 8500, 5500,
+                      3700, 11000, 7800, 4200, 10000,
+                      7200, 3400, 14000, 6200, 8800,
+                      4100, 11500, 9000, 5300, 10500],
+    "PerformanceScore": [3.5, 4.2, 4.8, 3.9, 4.5,
+                         4.0, 3.7, 4.9, 4.3, 4.1,
+                         3.6, 4.7, 4.2, 3.8, 4.6,
+                         4.1, 3.4, 4.8, 4.0, 4.4,
+                         3.9, 4.7, 4.5, 4.0, 4.6],
+    "RemoteWorkDaysPerMonth": [4, 8, 10, 6, 9,
+                                7, 5, 12, 8, 6,
+                                4, 11, 9, 5, 10,
+                                7, 3, 12, 6, 8,
+                                5, 11, 9, 6, 10],
+    "ProjectsHandled": [1, 3, 6, 2, 5,
+                        4, 2, 7, 4, 3,
+                        2, 6, 4, 3, 5,
+                        4, 1, 7, 3, 5,
+                        2, 6, 5, 3, 6],
+    "OvertimeHoursPerMonth": [5, 10, 20, 8, 15,
+                              12, 6, 25, 14, 9,
+                              7, 18, 13, 8, 17,
+                              11, 5, 22, 10, 16,
+                              8, 19, 15, 9, 18],
+    "Attrition": [False, False, False, True, False,
+                  False, True, False, False, True,
+                  False, False, False, True, False,
+                  False, True, False, False, False,
+                  True, False, False, True, False]
+}
+
+
+
+df.info()--->
+		<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 25 entries, 0 to 24
+Data columns (total 12 columns):
+ #   Column                  Non-Null Count  Dtype  
+---  ------                  --------------  -----  
+ 0   EmployeeID              25 non-null     int64  
+ 1   Age                     25 non-null     int64  
+ 2   Gender                  25 non-null     object 
+ 3   Department              25 non-null     object 
+ 4   YearsExperience         25 non-null     int64  
+ 5   EducationLevel          25 non-null     object 
+ 6   MonthlySalary           25 non-null     int64  
+ 7   PerformanceScore        25 non-null     float64
+ 8   RemoteWorkDaysPerMonth  25 non-null     int64  
+ 9   ProjectsHandled         25 non-null     int64  
+ 10  OvertimeHoursPerMonth   25 non-null     int64  
+ 11  Attrition               25 non-null     bool   
+dtypes: bool(1), float64(1), int64(7), object(3)
+memory usage: 2.3+ KB
+None
